@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="popup1.css">
+    <script defer src="popup.js"></script>
+    <script defer src="popup1.js"></script>
+</head>
+
+<body>
+    <button data-modal-target="#modal">Show Popup 1</button>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Example Popup</div>
+
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+                ipsam ea pariatur, quia molestias commodi, perferendis inventore
+                tempora accusamus doloribus rem, maxime ut asperiores quod architecto
+                culpa quo odit? Deleniti quisquam ducimus voluptate ipsam tenetur
+                ratione aliquid commodi impedit tempore necessitatibus? Delectus error
+                beatae adipisci nihil, pariatur quisquam ut facilis commodi enim quas
+                rem cumque nemo nobis non consectetur omnis, quam ipsum. Voluptatem
+                tenetur ad reprehenderit repellat provident molestias esse porro nisi
+                atque nulla nemo unde commodi voluptates labore ipsam, dicta nesciunt.
+                Temporibus labore quasi recusandae, eius totam maiores culpa adipisci
+                numquam molestias praesentium ex doloribus autem aliquam consequuntur
+                nulla?
+            </p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <!-- different popup -->
+    <div class="popup" id="popup-1">
+        <div class="overlay-popup1"></div>
+
+        <div class="content">
+            <div class="close-btn" onclick="tooglePopup()">&times;</div>
+            <h1>Title</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+                repellendus? Excepturi culpa, assumenda quos reiciendis deserunt esse
+                dolore debitis non iste magni voluptatum quae totam ex amet recusandae
+                qui voluptates temporibus provident cumque minima, fugiat error beatae
+                necessitatibus. Incidunt mollitia aperiam vel deleniti. Ipsa
+                reiciendis laborum sit quam tenetur in.
+            </p>
+        </div>
+    </div>
+
+    <div class="buttonpopup1">
+        <button onclick="tooglePopup()">Show Popup 2</button>
+    </div>
+</body>
+
+</html>

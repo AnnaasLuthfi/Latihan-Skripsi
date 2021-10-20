@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F0F0F0;
+}
+
+.navbar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    /*bagian margin ini yang mempengaruhi*/
+    /* margin-left: -300px;         */
+    background-color: #7ac6f0;
+    transition: 0.4s;
+}
+
+.nav-link{
+    font-size: 1.25em;
+    color: #FFFFFF;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover{
+    background-color: #70C1EF;
+}
+
+
+
+.my-container{
+    margin-left: 300px;
+}
